@@ -18,11 +18,22 @@ deolhonafila <- function(){
 
 }
 
+# Criar funcao para ajustar datas e horarios usando o pacote lubridate
+
+sf <- stamp("01/20")
+
+sf(ymd_hms("2020-12-05"))
+
 # Criar uma tabela com os dados e adicionar colunas
 # Código escrito por José de Jesus Filho (https://github.com/jjesusfilho)
 
 df <- deolhonafila() %>%
+  rename(
+    regiao_da_cidade = crs
+  ) %>%
   mutate(
+    atualizacao_mais_recente = max(data_hora),
+    data_e_hora_atualizacao = str_sub(atualizacao_mais_recente, start = 1, end = 16),
     contagem = case_when(
       !is.na(equipamento) ~ 1,
       T ~ 1
@@ -36,7 +47,7 @@ df <- deolhonafila() %>%
 # Calcular porcentagem de postos em cada regiao onde existe falta de Astrazeneca naquele momento
 
 analise_az <- df %>%
-  group_by(crs, falta_az) %>%
+  group_by(data_e_hora_atualizacao, regiao_da_cidade, falta_az) %>%
   summarise(
     contagem = sum(contagem)
   ) %>%
@@ -49,4 +60,4 @@ analise_az <- df %>%
 
 # Criar e salvar arquivo CSV com o resumo
 
-write.csv2(analise_az, "dados/resumo_mais_atual.csv", row.names = F)
+write.csv(analise_az, "dados/resumo_mais_atual.csv", row.names = F)
