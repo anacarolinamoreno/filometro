@@ -19,6 +19,7 @@ deolhonafila <- function(){
 }
 
 # Criar uma tabela com os dados e adicionar colunas
+# Código escrito por José de Jesus Filho (https://github.com/jjesusfilho)
 
 df <- deolhonafila() %>%
   mutate(
