@@ -46,3 +46,7 @@ analise_az <- df %>%
     total_postos_regiao = postos_SEM_astrazeneca + postos_COM_astrazeneca,
     pct_postos_SEM_astrazeneca = round((( postos_SEM_astrazeneca * 100 ) / total_postos_regiao), 1)
   )
+
+# Criar e salvar arquivo CSV com o resumo
+
+write.csv2(analise_az, "dados/resumo_mais_atual.csv", row.names = F)
