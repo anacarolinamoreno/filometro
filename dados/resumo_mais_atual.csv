@@ -1,7 +1,7 @@
-"crs","postos_SEM_astrazeneca","postos_COM_astrazeneca","total_postos_regiao","pct_postos_SEM_astrazeneca"
-"CENTRO",16,0,16,100
-"LESTE",195,11,206,94.7
-"MEGA-DRIVES",10,0,10,100
-"NORTE",97,5,102,95.1
-"OESTE",38,0,38,100
-"SUL",172,12,184,93.5
+"data_e_hora_atualizacao","regiao_da_cidade","postos_SEM_astrazeneca","postos_COM_astrazeneca","total_postos_regiao","pct_postos_SEM_astrazeneca"
+"2021-09-28 19:09","CENTRO",16,0,16,100
+"2021-09-28 19:09","LESTE",200,6,206,97.1
+"2021-09-28 19:09","MEGA-DRIVES",10,0,10,100
+"2021-09-28 19:09","NORTE",101,1,102,99
+"2021-09-28 19:09","OESTE",38,0,38,100
+"2021-09-28 19:09","SUL",180,4,184,97.8
