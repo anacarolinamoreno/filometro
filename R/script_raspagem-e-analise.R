@@ -59,5 +59,7 @@ analise_az <- df %>%
   )
 
 # Criar e salvar arquivo CSV com o resumo
+# O horario e a data representam a hora mais recente de atualizacao de um dos postos
+# no momento da coleta dos dados
 
 write.csv(analise_az, "dados/resumo_mais_atual.csv", row.names = F)
