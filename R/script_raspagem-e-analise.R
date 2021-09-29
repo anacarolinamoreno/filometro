@@ -47,6 +47,7 @@ df <- deolhonafila() %>%
 # Calcular porcentagem de postos em cada regiao onde existe falta de Astrazeneca naquele momento
 
 analise_az <- df %>%
+  filter(status_fila != 5) %>%
   group_by(data_e_hora_atualizacao, regiao_da_cidade, falta_az) %>%
   summarise(
     contagem = sum(contagem)
@@ -54,7 +55,7 @@ analise_az <- df %>%
   pivot_wider(names_from = falta_az, values_from = contagem) %>%
   replace(is.na(.), 0) %>%
   mutate(
-    total_postos_regiao = postos_SEM_astrazeneca + postos_COM_astrazeneca,
+    total_postos_FUNCIONANDO = postos_SEM_astrazeneca + postos_COM_astrazeneca,
     pct_postos_SEM_astrazeneca = round((( postos_SEM_astrazeneca * 100 ) / total_postos_regiao), 1)
   )
 
