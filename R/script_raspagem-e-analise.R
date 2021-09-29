@@ -59,8 +59,32 @@ analise_az <- df %>%
     pct_postos_SEM_astrazeneca = round((( postos_SEM_astrazeneca * 100 ) / total_postos_FUNCIONANDO), 1)
   )
 
+# Calcular a mesma porcentagem para a cidade inteira
+
+total <- df %>%
+  filter(indice_fila != 5) %>%
+  group_by(data_e_hora_atualizacao, falta_az) %>%
+  summarise(
+    contagem = sum(contagem)
+  ) %>%
+  pivot_wider(names_from = falta_az, values_from = contagem) %>%
+  replace(is.na(.), 0) %>%
+  mutate(
+    total_postos_FUNCIONANDO = postos_SEM_astrazeneca + postos_COM_astrazeneca,
+    pct_postos_SEM_astrazeneca = round((( postos_SEM_astrazeneca * 100 ) / total_postos_FUNCIONANDO), 1)
+  ) %>%
+  select(data_e_hora_atualizacao, postos_SEM_astrazeneca, postos_COM_astrazeneca, total_postos_FUNCIONANDO, pct_postos_SEM_astrazeneca)
+
+# Juntar as duas tabelas
+
+resumo_mais_atual <- bind_rows(
+  analise_az, total
+) %>%
+  replace(is.na(.), "TOTAL DA CIDADE")
+
+
 # Criar e salvar arquivo CSV com o resumo
 # O horario e a data representam a hora mais recente de atualizacao de um dos postos
 # no momento da coleta dos dados
 
-write.csv(analise_az, "dados/resumo_mais_atual.csv", row.names = F)
+write.csv(resumo_mais_atual, "dados/resumo_mais_atual.csv", row.names = F)
