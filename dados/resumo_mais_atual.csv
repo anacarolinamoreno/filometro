@@ -1,8 +1,8 @@
-"data_e_hora_atualizacao","regiao_da_cidade","postos_SEM_astrazeneca","postos_COM_astrazeneca","total_postos_FUNCIONANDO","pct_postos_SEM_astrazeneca"
-"2021-10-05 11:00","CENTRO",13,0,13,100
-"2021-10-05 11:00","LESTE",197,7,204,96.6
-"2021-10-05 11:00","MEGA-DRIVES",10,0,10,100
-"2021-10-05 11:00","NORTE",98,1,99,99
-"2021-10-05 11:00","OESTE",37,0,37,100
-"2021-10-05 11:00","SUL",168,13,181,92.8
-"2021-10-05 11:00","TOTAL DA CIDADE",523,21,544,96.1
+"data_e_hora_atualizacao","regiao_da_cidade","postos_COM_astrazeneca","postos_SEM_astrazeneca","total_postos_FUNCIONANDO","pct_postos_SEM_astrazeneca"
+"2021-10-05 16:54","CENTRO",2,10,12,83.3
+"2021-10-05 16:54","LESTE",6,191,197,97
+"2021-10-05 16:54","MEGA-DRIVES",2,6,8,75
+"2021-10-05 16:54","NORTE",50,43,93,46.2
+"2021-10-05 16:54","OESTE",12,23,35,65.7
+"2021-10-05 16:54","SUL",30,131,161,81.4
+"2021-10-05 16:54","TOTAL DA CIDADE",102,404,506,79.8
