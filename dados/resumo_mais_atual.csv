@@ -1,8 +1,7 @@
 "data_e_hora_atualizacao","regiao_da_cidade","postos_COM_astrazeneca","postos_SEM_astrazeneca","total_postos_FUNCIONANDO","pct_postos_SEM_astrazeneca"
-"2021-10-11 12:31","CENTRO",1,0,1,0
-"2021-10-11 12:31","LESTE",99,5,104,4.8
-"2021-10-11 12:31","MEGA-DRIVES",3,0,3,0
-"2021-10-11 12:31","NORTE",21,0,21,0
-"2021-10-11 12:31","OESTE",8,0,8,0
-"2021-10-11 12:31","SUL",33,0,33,0
-"2021-10-11 12:31","TOTAL DA CIDADE",165,5,170,2.9
+"2021-10-11 16:55","LESTE",98,5,103,4.9
+"2021-10-11 16:55","MEGA-DRIVES",2,0,2,0
+"2021-10-11 16:55","NORTE",21,0,21,0
+"2021-10-11 16:55","OESTE",6,0,6,0
+"2021-10-11 16:55","SUL",30,0,30,0
+"2021-10-11 16:55","TOTAL DA CIDADE",157,5,162,3.1
