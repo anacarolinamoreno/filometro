@@ -29,6 +29,10 @@ sf(ymd_hms("2020-12-05"))
 # Criar uma tabela com os dados e adicionar colunas
 # Código escrito por José de Jesus Filho (https://github.com/jjesusfilho)
 
+
+df_exemplo <- deolhonafila()
+
+
 df <- deolhonafila() %>%
   rename(
     regiao_da_cidade = crs
