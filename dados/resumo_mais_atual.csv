@@ -1,7 +1,8 @@
-"data_e_hora_atualizacao","regiao_da_cidade","pct_postos_SEM_astrazeneca","pct_postos_SEM_coronavac","pct_postos_SEM_pfizer"
-"2021-12-05 09:06","CENTRO",0,0,0
-"2021-12-05 09:06","LESTE",0,33.3,0
-"2021-12-05 09:06","MEGA-DRIVES",0,0,0
-"2021-12-05 09:06","NORTE",50,100,0
-"2021-12-05 09:06","SUL",6.2,56.2,6.2
-"2021-12-05 09:06","TOTAL DA CIDADE",7.4,48.1,3.7
+"data_e_hora_atualizacao","regiao_da_cidade","pct_postos_SEM_astrazeneca","pct_postos_SEM_coronavac","pct_postos_SEM_janssen","pct_postos_SEM_pfizer","pct_postos_SEM_pfizer_pediatrica","pct_postos_SEM_influenza"
+"2022-01-18 16:13","CENTRO",0,0,0,0,9.1,81.8
+"2022-01-18 16:13","LESTE",97.9,3.1,2.1,1.6,2.6,27.6
+"2022-01-18 16:13","MEGA-DRIVES",66.7,0,0,0,100,100
+"2022-01-18 16:13","NORTE",63.3,4.1,0,0,3.1,29.6
+"2022-01-18 16:13","OESTE",0,8.8,5.9,0,8.8,55.9
+"2022-01-18 16:13","SUL",81.4,9,5.4,2.4,9,82.6
+"2022-01-18 16:13","TOTAL DA CIDADE",76.8,5.5,3,1.4,5.9,49.7
