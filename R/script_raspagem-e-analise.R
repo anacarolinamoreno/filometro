@@ -9,6 +9,7 @@ library(janitor)
 # Script pra analisar em algum dado momento do dia em quantos postos tem e em quantos falta Astrazeneca
 
 # Raspar os dados do site De Olho na Fila, da Prefeitura de SP
+# (Código escrito por José de Jesus Filho: https://github.com/jjesusfilho)
 
 deolhonafila <- function(){
 
@@ -27,7 +28,6 @@ sf <- stamp("01/20")
 sf(ymd_hms("2020-12-05"))
 
 # Criar uma tabela com os dados e adicionar colunas
-# Código escrito por José de Jesus Filho (https://github.com/jjesusfilho)
 
 
 df_exemplo <- deolhonafila()
