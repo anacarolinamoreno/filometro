@@ -1,7 +1,7 @@
 ---
 title: "Disponibilidade de vacinas contra a Covid-19 na cidade de São Paulo"
-author: "(Por Ana Carolina Moreno)"
-date: "Verificar data mais recente na mensagem de commit"
+author: "Por Ana Carolina Moreno"
+date: "(verificar data mais recente na mensagem de commit dos dados)"
 output: github_document
 ---
 
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-###### Fonte: Sivep-Gripe (Ministério da Saúde): [link para o OpenDatasus](opendatasus.saude.gov.br/)
+###### Fonte: site De Olho na Fila (Prefeitura de São Paulo): [link para o OpenDatasus](https://deolhonafila.prefeitura.sp.gov.br)
 
 <!-- badges: start -->
 <!-- badges: end -->
