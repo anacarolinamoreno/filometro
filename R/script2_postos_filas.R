@@ -100,31 +100,6 @@ analise_fila_regiao <- bind_rows(
   analise_fila, analise_fila_todos) %>%
   replace(is.na(.), "TOTAL DA CIDADE")
 
-# Análise por existência da vacina
-
-analise_fila_vacina <- filometro %>%
-  filter(indice_fila != 5) %>%
-  group_by(data_e_hora_atualizacao, vacina_influenza, status_fila) %>%
-  summarise(
-    contagem = sum(contagem)
-  ) %>%
-  pivot_wider(names_from = status_fila, values_from = contagem) %>%
-  replace(is.na(.), 0) %>%
-  mutate(
-    total_postos_FUNCIONANDO = fila_media + fila_grande + fila_pequena + sem_fila,
-    postos_com_fila_media_ou_grande = fila_grande + fila_media,
-    pct_postos_com_fila = round((( postos_com_fila_media_ou_grande * 100 ) / total_postos_FUNCIONANDO), 1)
-  ) %>%
-  select(data_e_hora_atualizacao,
-         vacina_influenza,
-         total_postos_FUNCIONANDO,
-         postos_com_fila_media_ou_grande,
-         pct_postos_com_fila)
-
-
-analise_fila_vacina_total <- bind_rows(
-  analise_fila_vacina, analise_fila_todos) %>%
-  replace(is.na(.), "TOTAL DA CIDADE")
 
 
 # Análise por distrito da cidade
@@ -180,5 +155,4 @@ fila_grande <- filometro %>%
 # no momento da coleta dos dados
 
 write.csv(analise_fila_regiao, "dados/resumo_fila_por_regiao.csv", row.names = F)
-write.csv(analise_fila_vacina_total, "dados/resumo_por_vacina_influenza.csv", row.names = F)
 write.csv(analise_fila_distrito_total, "dados/resumo_por_distrito.csv", row.names = F)
