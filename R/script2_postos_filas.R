@@ -1,5 +1,4 @@
 
-
 library(tidyverse)
 library(lubridate)
 library(tidylog)
@@ -30,7 +29,7 @@ sf(ymd_hms("2020-12-05"))
 # Criar uma tabela com os dados e adicionar colunas
 
 
-df_exemplo <- deolhonafila()
+df_total <- deolhonafila()
 
 
 filometro <- deolhonafila() %>%

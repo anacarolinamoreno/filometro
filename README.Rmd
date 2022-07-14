@@ -19,4 +19,10 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Essa página contém análises de dados de casos confirmados de Covid-19 no Estado de São Paulo.
+#### 1- Código para verificar em quantos postos há falta de alguma vacina
+
+* script1_vacinas_disponibilidade.R
+
+#### 2- Código para verificar em quantos postos há filas médias ou grandes
+
+* script2_postos_filas.R
