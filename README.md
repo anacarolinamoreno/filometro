@@ -5,7 +5,7 @@ Por Ana Carolina Moreno
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-###### Fonte: site De Olho na Fila (Prefeitura de São Paulo): [link para o OpenDatasus](https://deolhonafila.prefeitura.sp.gov.br)
+###### Fonte: site De Olho na Fila (Prefeitura de São Paulo): [link para o site](https://deolhonafila.prefeitura.sp.gov.br)
 
 <!-- badges: start -->
 <!-- badges: end -->
