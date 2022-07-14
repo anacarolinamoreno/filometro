@@ -21,8 +21,8 @@ knitr::opts_chunk$set(
 
 #### 1- Código para verificar em quantos postos há falta de alguma vacina
 
-* script1_vacinas_disponibilidade.R
+* /R/script1_vacinas_disponibilidade.R
 
 #### 2- Código para verificar em quantos postos há filas médias ou grandes
 
-* script2_postos_filas.R
+* /R/script2_postos_filas.R
