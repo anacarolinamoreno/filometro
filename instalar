@@ -2,4 +2,5 @@ install.packages("rtweet")
 install.packages("quanteda")
 install.packages("quanteda.textplots")
 install.packages("quanteda.textstats")
-devtools::install.github("tidyverse/ggplot2")
+devtools::install_github("tidyverse/ggplot2")
+
